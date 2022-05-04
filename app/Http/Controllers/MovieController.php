@@ -10,8 +10,11 @@ class MovieController extends Controller
     public function MovieControllerFunction(){
 
         $myMovies = Movie::all();
-        dd($myMovies);
-        
-        return view('MovieView', $myMovies);
+
+        $data = [
+            'movies' => $myMovies
+        ];
+
+        return view('MovieView', $data);
     }
 }

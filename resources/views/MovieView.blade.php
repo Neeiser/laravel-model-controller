@@ -7,6 +7,8 @@
     <title>laravel-model-controller</title>
 </head>
 <body>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam, nobis delectus culpa, reiciendis illum porro ipsa odit laboriosam debitis cupiditate dignissimos repellat cumque quas eaque non perspiciatis fugit cum.
+    @foreach ($movies as $movieItem)
+        <p>{{$movieItem->title}}</p>
+    @endforeach
 </body>
 </html>
