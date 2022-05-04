@@ -17,7 +17,7 @@
                     <small>{{$movieItem->original_title}}</small>
                     <span>{{$movieItem->nationality}}</span>
                     <time>{{$movieItem->date}}</time>
-                    <var>{{$movieItem->vote}} / 10</var>
+                    <var class="num">{{$movieItem->vote}} <span id="max-num">/ 10</span></var>
                 </div>
             @endforeach
         </div>

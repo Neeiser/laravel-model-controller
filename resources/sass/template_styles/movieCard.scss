@@ -5,7 +5,8 @@ main{
     h1{
         text-align: center;
         text-transform: uppercase;
-        color: $yellow;
+        color: $red;
+        font-size: 2.5rem;
         padding: 50px 0px;
     }
     .movie-container{
@@ -17,15 +18,42 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-between;
             width: 250px;
             margin: 20px;
             padding: 40px 20px;
-            background-color: $green;
+            background-color: $yellow;
             border-radius: 20px;
+            box-shadow: 12px 12px 2px 1px $orange-shadow;
             *{
                 text-align: center;
                 padding: 10px 0px;
             }
+            h2{
+                text-transform: uppercase;
+            }
+            span{
+                text-transform: capitalize;
+                font-size: 0.9rem;
+            }
+            .num{
+                color: $what-kind-of-blue-is-this;
+                font-size: 1.5rem;
+                #max-num{
+                    color: black;
+                    font-size: 1rem;
+                }
+            }
         }
+        .movie-card:hover{
+            background-color: $yellow-hover;
+            transition: 0.2s;
+            box-shadow: 8px 8px 2px 1px $orange-shadow;
+        }
+        .movie-card:active{
+            transform: scale(0.9);
+            transition: 0.2s;
+        }
+        
     }
 }

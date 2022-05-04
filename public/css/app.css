@@ -11,13 +11,14 @@
 main {
   width: 100vw;
   min-height: 100vh;
-  background-color: #277DA1;
+  background-color: #073B4C;
 }
 
 main h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #F9C74F;
+  color: #e72653;
+  font-size: 2.5rem;
   padding: 50px 0px;
 }
 
@@ -32,15 +33,47 @@ main .movie-container .movie-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 250px;
   margin: 20px;
   padding: 40px 20px;
-  background-color: #90BE6D;
+  background-color: #FFD166;
   border-radius: 20px;
+  box-shadow: 12px 12px 2px 1px #ef9347;
 }
 
 main .movie-container .movie-card * {
   text-align: center;
   padding: 10px 0px;
+}
+
+main .movie-container .movie-card h2 {
+  text-transform: uppercase;
+}
+
+main .movie-container .movie-card span {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+main .movie-container .movie-card .num {
+  color: #118AB2;
+  font-size: 1.5rem;
+}
+
+main .movie-container .movie-card .num #max-num {
+  color: black;
+  font-size: 1rem;
+}
+
+main .movie-container .movie-card:hover {
+  background-color: #ddc282;
+  transition: 0.2s;
+  box-shadow: 8px 8px 2px 1px #ef9347;
+}
+
+main .movie-container .movie-card:active {
+  transform: scale(0.9);
+  transition: 0.2s;
 }
 
