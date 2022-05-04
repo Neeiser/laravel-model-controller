@@ -9,14 +9,15 @@
 </head>
 <body>
     <main>
+        <h1>Movies Showcase</h1>
         <div class="movie-container">
             @foreach ($movies as $movieItem)
                 <div class="movie-card">
-                    <p>{{$movieItem->title}}</p>
-                    <p>{{$movieItem->original_title}}</p>
-                    <p>{{$movieItem->nationality}}</p>
-                    <p>{{$movieItem->date}}</p>
-                    <p>{{$movieItem->vote}}</p>
+                    <h2>{{$movieItem->title}}</h2>
+                    <small>{{$movieItem->original_title}}</small>
+                    <span>{{$movieItem->nationality}}</span>
+                    <time>{{$movieItem->date}}</time>
+                    <var>{{$movieItem->vote}} / 10</var>
                 </div>
             @endforeach
         </div>
